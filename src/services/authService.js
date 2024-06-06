@@ -3,7 +3,9 @@ import { apiUrl } from "../config.json";
 
 import jwt_decode from "jwt-decode";
 
-const apiEndpoint = apiUrl + "/auth";
+const apiEndpoint = "http://localhost:3900/api";
+//I replaced the bottom line with the first because the new update doesn't accept apiurl
+// const apiEndpoint = apiUrl + "/auth";
 const tokkenKey = "token";
 
 const login = async (email, password) => {
